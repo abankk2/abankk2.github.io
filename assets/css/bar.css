@@ -153,3 +153,25 @@
 .progress-line.css span::after {
   content: "80%";
 }
+
+/* Pengalaman */
+.accordion-button::after {
+  width: auto;
+  height: auto;
+  content: "\f102";
+  font-family: FontAwesome;
+  background-image: none;
+  font-weight: 100;
+  color: #ff8400;
+  transform: translateY(-4px);
+}
+.accordion-button:not(.collapsed)::after {
+  width: auto;
+  height: auto;
+  background-image: none;
+  content: "\f103";
+  font-family: FontAwesome;
+  color: #ff8400;
+  transform: translate(-5px, -4px);
+  transform: rotate(0deg);
+}
