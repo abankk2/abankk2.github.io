@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+.hero {
+  background: rgb(255, 132, 0);
+  background: linear-gradient(90deg, rgba(255, 132, 0, 1) 0%, rgba(255, 209, 0, 1) 100%);
+}
+
+.btn.round {
+  border-radius: 24px;
+}
+
+.nama {
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+.ket {
+  margin-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto Serif", sans-serif;
+}
+
+.judul {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  color: white;
+}
+
+.skill {
+  background-color: #ff8400;
+}
+
+/* Animation */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+.progress-bar {
+  background: rgb(255, 192, 0);
+  background: linear-gradient(90deg, rgba(255, 192, 0, 1) 43%, rgba(255, 136, 0, 1) 100%);
+}
+
+.garis-judul {
+  border: 3px solid white;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.garis-judul2 {
+  border: 3px solid #ff8400;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #56ab2f 0%, #a8e063 51%, #56ab2f 100%);
+}
+.btn-grad {
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Skill Bar */
+
+.wrapper {
+  width: 400px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+  overflow-x: hidden;
+}
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  margin: 0;
+}
+.skill:before {
+  width: 100%;
+  height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #959595;
+  bottom: 0;
+}
+.skill-bar {
+  width: 100%;
+  height: 5px;
+  background: #f4392f;
+  display: block;
+  position: relative;
+}
+
+/* SKILL 1 */
+.skill1 {
+  width: 95%;
+}
+.skill-bar span {
+  position: absolute;
+  border-top: 5px solid #f4392f;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+.skill-bar {
+  position: relative;
+}
+
+.skill1 .skill-count1 {
+  right: 0;
+}
+/* SKILL 2 */
+.skill2 {
+  width: 85%;
+}
+
+.skill2 .skill-count2 {
+  right: 0;
+}
+/* SKILL 3 */
+.skill3 {
+  width: 75%;
+}
+.skill3 .skill-count3 {
+  right: 0;
+}
+
+/* SKILL 4 */
+.skill4 {
+  width: 65%;
+}
+
+.skill4 .skill-count4 {
+  right: 0;
+}
+
+/* SKILL 5 */
+.skill5 {
+  width: 80%;
+}
+
+.skill5 .skill-count5 {
+  right: 0;
+}
+
+/* SKILL 6 */
+.skill6 {
+  width: 90%;
+}
+
+.skill6 .skill-count6 {
+  right: 0;
+}
+/* GITHUB SOURCE STYLE  */
+.github-source {
+  float: right;
+  display: block;
+  color: #fff;
+  margin: 0 20px;
+  position: relative;
+  z-index: 999999;
+  top: 0;
+}
+.github-source i {
+  font-size: 50px;
+  color: #000;
+}
+
+/* Skil Barrrr */
